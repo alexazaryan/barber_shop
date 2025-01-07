@@ -85,6 +85,10 @@ textarea {
 
 /* Медиа-запросы для изменения расположения элементов */
 @media (min-width: 880px) {
+  .form-section {
+    background-attachment: scroll;
+  }
+
   .row {
     flex-direction: row; /* При ширине экрана более 1000px элементы становятся по горизонтали */
   }

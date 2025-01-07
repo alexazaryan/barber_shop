@@ -67,6 +67,10 @@
 }
 
 @media (max-width: 880px) {
+  .right-section {
+    background-attachment: scroll;
+  }
+
   .right-section__box {
     margin: 0;
   }

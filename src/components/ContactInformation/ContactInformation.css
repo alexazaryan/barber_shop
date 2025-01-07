@@ -1,0 +1,99 @@
+.contact-information__image-list,
+.contact-information__other-list,
+.contact-information__list {
+  list-style: none;
+}
+
+.contact-information__list-item {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.contact-information__list-item:nth-child(2),
+.contact-information__list-item:nth-child(3) {
+  color: #d6a354;
+}
+
+/* left blok */
+.contact-information__details {
+  padding: 1rem;
+  width: 100%;
+}
+
+/* right blok */
+.contact-information__other {
+  width: 100%;
+
+  padding: 15px;
+}
+
+.contact-information__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-information__title {
+  margin: 70px 0;
+
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #f0f8ff;
+}
+
+/* карточка  */
+.contact-information__other-wrapper {
+  max-width: 547px;
+  margin: auto;
+  min-height: 200px;
+  border-radius: 10px;
+  background: #d6a354;
+}
+
+.contact-information__other-inner {
+  border-radius: 10px;
+  transform: rotate(5deg);
+  min-height: 200px;
+  background: #c12828;
+}
+
+.contact-information__image-list {
+  display: flex;
+}
+
+/* contact-information__other-list */
+
+.contact-information__other-list > li {
+  margin: 10px;
+}
+
+.contact-information__other-list {
+  transform: rotate(-5deg);
+  padding: 2rem;
+}
+
+.contact-information__img {
+  width: 50px;
+  height: 50px;
+  background: #d6a354;
+  border-radius: 50%;
+}
+
+.contact-information__two {
+  font-weight: 800;
+  color: white;
+  font-size: 1.4rem;
+}
+.contact-information__three {
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 680px) {
+  .contact-information__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}

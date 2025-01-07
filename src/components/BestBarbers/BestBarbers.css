@@ -1,0 +1,81 @@
+.bb-wrap {
+  background: url("/two-background.jpg") center / cover;
+  background-attachment: fixed;
+  /* height: 100vh; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.bb-wrap__list {
+  margin-left: 24%;
+  padding: 100px 50px;
+  list-style: none;
+  background: white;
+}
+
+.bb-wrap__item--title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  padding-bottom: 25px;
+}
+
+.bb-wrap__item--description {
+  font-size: 1.6rem;
+  color: #717275;
+  margin-bottom: 25px;
+}
+
+.bb-wrap__item--line {
+  border-bottom: 1px solid #717275;
+  margin-bottom: 50px;
+}
+
+.bb-wrap__item--meet {
+  font-size: 1.6rem;
+  color: #c12828;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.bb-wrap__box {
+  padding: 100px 50px;
+  list-style: none;
+  margin-left: 25%;
+  text-align: center;
+}
+
+.bb-wrap__discount {
+  color: #c12828;
+  font-size: 3.8rem;
+  font-weight: 900;
+  padding-bottom: 16px;
+}
+
+.bb-wrap__text {
+  padding-bottom: 16px;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.bb-wrap__btn {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 900;
+  background: #d6a354;
+}
+
+@media (max-width: 880px) {
+  .bb-wrap__list {
+    margin: 0;
+    padding: 0.6rem;
+  }
+
+  .bb-wrap__box {
+    padding: 100px 50px;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+  }
+}

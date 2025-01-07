@@ -1,0 +1,103 @@
+.form-section {
+  background: url("/third-background.jpg") center / cover;
+  background-attachment: fixed;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 50px 0;
+}
+
+.form-section__form {
+  margin-left: 25%;
+  border-radius: 20px;
+  background-color: white;
+  padding: 50px;
+  width: 100%;
+  max-width: 650px;
+}
+
+/*  */
+.form-section__title {
+  font-size: 3rem;
+
+  color: black;
+
+  margin: 0;
+}
+
+h3 {
+  color: black;
+
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input,
+.input-error,
+.textarea,
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%; /* Все элементы имеют фиксированную ширину */
+  box-sizing: border-box; /* Учитываем паддинги в ширине */
+  flex: 0 1 33%; /* Останавливаем изменение размера */
+}
+
+.input-error {
+  border: 2px solid red;
+  font-style: italic;
+}
+
+textarea {
+  height: 100px;
+}
+
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 900;
+  color: white;
+  background: #d6a354;
+  cursor: pointer;
+}
+
+/* Медиа-запросы для изменения расположения элементов */
+@media (min-width: 880px) {
+  .row {
+    flex-direction: row; /* При ширине экрана более 1000px элементы становятся по горизонтали */
+  }
+
+  .input,
+  .textarea,
+  select {
+    flex: 0 1 33%; /* Устанавливаем одинаковую ширину для полей при большом экране */
+  }
+}
+
+@media (max-width: 880px) {
+  .form-section__form {
+    margin: 0;
+  }
+}

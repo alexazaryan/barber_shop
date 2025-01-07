@@ -1,0 +1,105 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card__team {
+  background: #d6a354; /* Начальный цвет фона */
+  border-radius: 20px;
+  margin: 0 20px 50px 20px;
+  width: 525px;
+  /* min-width: 360px; */
+  height: 300px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.5s ease, background-position 1s ease;
+  background-size: 200% 200%;
+  background-position: 100% 100%;
+}
+
+.card__team:hover {
+  background: linear-gradient(90deg, #ee861f, #ff6347, #1e90ff, #32cd32);
+  background-size: 400% 400%;
+  background-position: 0% 0%;
+  transform: scale(1.1);
+}
+
+.card__team:hover .card__team-info {
+  top: -15px;
+}
+
+.card__team-name {
+  color: red;
+  font-size: 1.2rem;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.card__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  transform: rotate(12deg);
+  background: url("/barber_ferst.jpg") center / cover;
+}
+
+.card__image-wrapper__two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  transform: rotate(12deg);
+  background: url("/barber_second.jpg") center / cover;
+}
+
+.card__team-info {
+  position: relative;
+  top: 0;
+  transition: top 1s ease;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 80%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  margin-top: auto;
+  padding: 15px;
+  transform: rotate(-12deg);
+  background: white;
+}
+
+.card-icon {
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background: #de4444;
+  border-radius: 100%;
+  transition: background 0.3s ease;
+}
+
+.card-icon:hover {
+  background: #d6a354;
+}
+
+@media (max-width: 880px) {
+  .card {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+
+  .card__team {
+    cursor: none;
+  }
+}

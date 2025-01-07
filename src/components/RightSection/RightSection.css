@@ -1,0 +1,79 @@
+.right-section {
+  background: url("/first-background.jpg") center / cover;
+  background-attachment: fixed;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.right-section__barber-shop {
+  list-style: none;
+  padding: 0 0 0 90px;
+  z-index: 0;
+}
+
+.right-section__box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 24.5%;
+
+  border: 7px solid #d6a354;
+  background: rgb(242, 206, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(242, 206, 114, 0.496) 0%,
+    rgba(113, 217, 238, 0.267) 100%
+  );
+}
+
+.right-section__title {
+  font-size: 6rem;
+  font-weight: 900;
+  color: white;
+}
+
+.right-section__description {
+  font-size: 1.8rem;
+
+  margin-bottom: 30px;
+}
+
+.right-section__button-first {
+  margin: 0 8px 8px 0;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 900;
+  color: white;
+  border: 2px solid white;
+  background: transparent;
+}
+
+.right-section__button-two:hover,
+.right-section__button-first:hover {
+  background: #fdbb2d;
+}
+
+.right-section__button-two {
+  margin: 0 0 8px 8px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 900;
+  color: white;
+  background: #c12828;
+}
+
+@media (max-width: 880px) {
+  .right-section__box {
+    margin: 0;
+  }
+
+  .right-section__barber-shop {
+    list-style: none;
+    padding: 1rem;
+    z-index: 0;
+  }
+}

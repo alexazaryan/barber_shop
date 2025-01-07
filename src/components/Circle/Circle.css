@@ -1,0 +1,60 @@
+.circle-section {
+  position: absolute;
+  border: 10px solid #d6a354;
+  border-radius: 100%;
+  /* z-index: 2; */
+  bottom: -60px;
+  right: -60px;
+  padding: 50px 90px 50px 50px;
+  width: 360px;
+  height: 360px;
+
+  /*  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circle-small {
+  background: url("/third-background.jpg") center / cover;
+  border: 10px solid #d6a354;
+  border-radius: 100%;
+  position: absolute;
+  top: -60px;
+  right: 20px;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  object-fit: cover;
+}
+
+.circle-title {
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+}
+
+.circle-title__box {
+  margin: 20px 0;
+}
+
+.circle-section-button {
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  font-weight: 900;
+  color: white;
+  background: #d6a354;
+}
+
+.circle-section-button:hover {
+  background: #c12828;
+}
+
+@media (max-width: 1100px) {
+  .circle-section {
+    display: none;
+  }
+}

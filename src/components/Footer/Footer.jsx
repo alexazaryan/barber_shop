@@ -4,7 +4,7 @@ import "./Footer.css";
 
 export default function Footer({ onScrollToSection }) {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer" >
       <div>
         <h3 className="footer__title">Our Branches</h3>
 

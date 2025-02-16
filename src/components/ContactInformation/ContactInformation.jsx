@@ -10,7 +10,7 @@ import "./ContactInformation.css";
 
 export default function ContactInformation() {
   return (
-    <div className="contact-information">
+    <div className="contact-information" id="contact">
       <div className="contact-information__title">Say hello</div>
 
       {/* left */}
@@ -55,11 +55,9 @@ export default function ContactInformation() {
               <div className="contact-information__other-content">
                 <ul className="contact-information__other-list">
                   <li className="contact-information__one">
-                    <PiLockKeyOpen className="contact-information__img"/>
+                    <PiLockKeyOpen className="contact-information__img" />
                   </li>
-                  <li className="contact-information__two">
-                    Open Daily
-                  </li>
+                  <li className="contact-information__two">Open Daily</li>
                   <li className="contact-information__three">
                     10:00 AM - 8:00 PM
                   </li>
